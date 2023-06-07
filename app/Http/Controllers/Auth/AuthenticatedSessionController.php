@@ -35,11 +35,13 @@ class AuthenticatedSessionController extends Controller
                 return redirect()->intended(RouteServiceProvider::HOME);
             }elseif($emailExist->type == 'manager')
             {
-              return redirect()->route('managerdashboard');
+                
+             return redirect()->route('managerdashboard');
             }
             elseif($emailExist->type == 'client')
             {
-            return redirect()->route('clientdashboard');
+                
+             return redirect()->route('clientdashboard');
             }
             }
     }
